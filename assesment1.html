@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/08bc0de851.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myTab a").click(function (e) {
+                e.preventDefault();
+                $(this).tab("show");
+            });
+        });
+    </script>
+
+    <title>Assesment-1</title>
+</head>
+
+<body class="bg-blue">
+
+    <div class=".container-fluid container-style  mx-5  my-3 min-vh-100 overflow-hidden  ">
+        <!-- nav bar -->
+        <div class="navar-style">
+    <!-- NAVBAR -->
+            <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary ">
+                <div class="container-fluid">
+                    <a class="" href="#"><img src="./assets/logo.png" class="navbar-brand ms-5" width="90"
+                            height="90"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                        <!-- nav-pills -->
+                        <ul class="nav nav-pills mx-auto   mb-lg-0" id="myTab">
+                            <li class="nav-item nav-tab-list pill-style">
+                                <a href="#home" class="nav-link active fs-5 hover-effect "><i class="fa fa-home"></i>
+                                    Home</a>
+                            </li>
+                            <li class="nav-item nav-tab-list pill-style">
+                                <a href="#About" class="nav-link fs-5 hover-effect"><i class="fa-brands fa-wpforms"></i>
+                                    About Us</a>
+                            </li>
+                            <li class="nav-item nav-tab-list pill-style">
+                                <a href="#Order" class="nav-link fs-5 hover-effect"><i class="fa fa-shopping-cart"></i>
+                                    Order</a>
+                            </li>
+                            <li class="nav-item nav-tab-list pill-style">
+                                <a href="#News" class="nav-link fs-5 hover-effect"><i class="fa fa-newspaper-o"></i>
+                                    News</a>
+                            </li>
+                            <li class="nav-item nav-tab-list pill-style">
+                                <a href="#Contact" class="nav-link fs-5 hover-effect"><i class="far fa-id-badge"></i>
+                                    Contact</a>
+                            </li>
+                        </ul>
+                        <h3 class="font-lato me-5"><i class="fa-solid fa-address-book"></i>     999-456-009</h3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="tab-content   mt-5">
+
+            <!-- HOME PAGE -->
+            <div class="tab-pane fade show active " id="home">
+
+                <div class="row tab-content-padding pb-3">
+                    <div class="col font-style  slogan-row ">
+                        <h1 class=" text-shadow">Today’s good mood is sponsored by <span class=" "><img width="70"
+                                    src="./assets/coffee-text.gif"></span> <span class="coffee-text">coffee</span></h1>
+                        <h3 class="starbucks-heading  mt-3">STARBUCKS COFFEE</h3>
+                        <h5 class="text-grey w-60  ">Sit back and enjoy the exceptional yummy taste of Starbucks at
+                            home.</h5>
+
+                    </div>
+
+                    <!-- <div class="col-lg-3"></div> -->
+
+                    <div class=" col offset-md-3 offset-sm-1">
+
+                        <div id="carouselExampleSlidesOnly " class="carousel slide ms-5" assets-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" assets-bs-interval="2000">
+                                    <img src="./assets/pngegg.png" class="" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets//2.png" class="" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/3.png" class="" alt="..." assets-bs-interval="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid text-center bg-grey py-5">
+                    <h2 class="">Barista Recommends</h2><br>
+
+                    <div class="row text-center tab-content-padding">
+                        <div class="col-sm">
+                            <div class="thumbnail">
+                                <img class="image-shadow" src="./assets/row2-1.jpg" alt="Java Frappuccino" width="400"
+                                    height="300">
+                                <p class="mt-3"><strong>Java Frappuccino </strong></p>
+                                <p>We blend mocha sauce and Frappuccino® chips with Frappuccino® roast coffee and milk
+                                    and ice, then top with whipped cream and mocha drizzle to bring you endless java
+                                    joy.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="thumbnail">
+                                <img class="image-shadow" src="./assets/row2-2.jpg" alt="Cold coffee" width="400"
+                                    height="300">
+                                <p class="mt-3"><strong>Cold coffee </strong></p>
+                                <p>Our signature rich in flavour espresso blended with delicate vanilla flavour and milk
+                                    to create a perfect cold coffee delight. An all time favourite.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="thumbnail">
+                                <img class="image-shadow" src="./assets/row2-3.jpg" alt="Vanilla" width="400"
+                                    height="300">
+                                <p class="mt-3"><strong>Vanilla Sweet Cream</strong></p>
+                                <p>Our signature rich in flavour espresso blended with delicate vanilla flavour and milk
+                                    to create a perfect cold coffee delight. An all time favourite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container-fluid text-center about-startbucks">
+                    <div class="row tab-content-padding ">
+
+                        <h1 class="col text-start mt-5">Why Starbucks</h1>
+                        <div class="col-4 d-flex justify-content-end">
+                            <div class=" col-1 grey-box m-2"></div>
+                            <div class=" col-1 grey-box m-2"></div>
+                            <div class="col-1 grey-box m-2"></div>
+                        </div>
+
+                    </div>
+
+                    <div class=" row  ">
+                        <div class="col-sm">
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-solid fa-mug-hot fa-5x service-coffee"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h4>Premium Coffee Blend</h4>
+                                        <p>Starbucks gets its coffee beans primarily from Latin America, Asia-Pacific,
+                                            and
+                                            Africa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-regular fa-copyright fa-5x service-company"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Most trusted brand</h3>
+                                        <p class="fw-semibold">Now we are serving coffee in more than 80 countries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-solid fa-recycle fa-5x service-recycle"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Biodegradable Cup</h3>
+                                        <p class="fw-semibold">100% Eco-friendly brands </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-solid fa-mug-hot fa-5x service-coffee"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Premium Coffee Blend</h3>
+                                        <p class="fw-semibold">Starbucks gets its coffee beans primarily from Latin
+                                            America, Asia-Pacific,
+                                            and
+                                            Africa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-regular fa-copyright fa-5x service-company"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Most trusted brand</h3>
+                                        <p class="fw-semibold">Now we are serving coffee in more than 80 countries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 my-5">
+                                <div class="row">
+                                    <div class="col d-flex align-items-center justify-content-center">
+                                        <span><i class="fa-solid fa-recycle fa-5x service-recycle"></i></span>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Biodegradable Cup</h3>
+                                        <p class="fw-semibold">100% Eco-friendly brands </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm img-fluid mx-5 d-flex align-items-center justify-content-center ">
+                            <img src="./assets/logo.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- About Page -->
+            <div class="tab-pane fade tab-content-padding" id="About">
+                <div class="container-fluid   py-5">
+
+                    <div class="row my-5">
+                        <div class="col-sm col-md ">
+                            <h4 class="mt-2">It happens millions of times each week – a customer receives a drink from a
+                                Starbucks barista – but each interaction is unique.</h4>
+                            <h5 class="my-5">It’s just a moment in time – just one hand reaching over the counter to
+                                present a cup to another outstretched hand.
+                            </h5>
+                            <h5 class="my-5">But it’s a connection....
+
+                                We make sure everything we do honors that connection – from our commitment to the
+                                highest quality coffee in the world, to the way we engage with our customers and
+                                communities to do business responsibly.</h5>
+                            <!-- accordion -->
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Expand to know more about Company
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong> Starbucks Corporation</strong> is an American multinational chain
+                                            of coffeehouses and roastery reserves headquartered in Seattle, Washington.
+                                            It is the world's largest coffeehouse chain.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md ">
+                            <img class=" offset-lg-1 w-75" src="./assets/about/side-image.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Order -->
+            <div class="tab-pane fade tab-content-padding" id="Order">
+
+                <h1 class="">Handcrafted Curations</h1>
+                <br><br>
+                <div class="row justify-content-center tab-content-padding ">
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/Bestseller.jpg">
+                        <h5>Bestseller</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/Drinks.jpg">
+                        <h5>Drinks</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/Food.jpg">
+                        <h5>Food</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/Merchandise.jpg">
+                        <h5>Merchandise</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/CoffeeAtHome.jpg">
+                        <h5>Coffee At Home</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img class="bestseller-order" src="./assets/order/ReadyToEat.jpg">
+                        <h5>Ready to Eat</h5>
+                    </div>
+
+                </div>
+                <div class="container-fluid ">
+                    <div class="row tab-content-padding text-center d-flex justify-content-center ">
+                        <h1 class="my-5">Barista Recommends</h1><br>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Americano</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Pistachio Latte.</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Peppermint Mocha</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5"
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate"> vanilla latte</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Caffè Mocha</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Java Chip Frappuccino</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Cold coffee</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Cold coffee</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Chocolate Cortado</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Chocolate Cappuccino</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Chocolate Cortado</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg  mx-5 mb-5 "
+                            style="width: 18rem;border-radius: 15px 50px 30px;background-color:#cadbd7;margin-top: 120px;">
+                            <img src="./assets/order/barista-recommends/order.png"
+                                class="card-img-top  order-template mx-auto " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-translate">Caramel Macchiato</h5>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- News -->
+            <div class="tab-pane fade" id="News">
+                <div class="container-fluid ">
+                    <div class="row tab-content-padding">
+                        <div class="col">
+                            <h1 class="mb-5">StartBucks Exclusive news</h1>
+                            <div class="image-container">
+                                <img class="news-image-1 mb-5" src="./assets/news/olive-oil.webp">
+                                <div class="bottom-left">Starbucks is all setto launch it's first olive oil-infused
+                                    drinks in Italy.</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="image-container">
+                                <img class="news-image-2" src="./assets/news/temp1.jpg">
+                                <div class="bottom-left">Starbucks just opened it's 28th outlet in New Delhi</div>
+                            </div>
+                            <div class="image-container">
+                                <img class="news-image-3" src="./assets/news/temp2.jpg">
+                                <div class="bottom-left ">Starbucks starts home Delivery on zomato</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="tab-pane fade " id="Contact">
+
+                <div class="container-fluid mt-5 ">
+                    <div class="row justify-content-center tab-content-padding mx-5">
+                        <div class="col-lg-4 col-md-12 col-sm-12 ">
+                            <h1 class="text-center">Talk with our sales team</h1>
+                            <h5 class="text-center">one of our executive will reach you within 48 hours</h5>
+                            <img src="./assets/contact/undraw-contact.svg" class="img-fluid ">
+                        </div>
+                        <div class="col-lg-4  col-md-12 col-sm-12 offset-lg-1">
+                            <form>
+
+                                <div class=" mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name">
+
+                                </div>
+                                <div class=" mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Add your Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">agree to T&C</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- FOOTER -->
+    </div>
+    <div class="position-relative bottom-0">
+        <footer>
+            <div class="card text-center position-relative ">
+                <div class="card-header ">
+                    StarBucks
+                </div>
+                <div class="card-body">
+                    <img src="./assets/logo.png" class="" width="100px">
+                    <p class="card-text">Follow us on Social Media <span class="ms-5"> <i
+                                class="fa-brands fa-facebook star-green"></i><i
+                                class="fa-brands fa-instagram star-green"></i> <i
+                                class="fa-brands fa-linkedin star-green"></i></span></p>
+
+                </div>
+                <div class="card-footer text-muted">
+                    © 2023 Starbucks Coffee Company. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

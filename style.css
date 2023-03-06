@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Lato:ital,wght@1,300&display=swap');
+
+.bg-blue{
+    background-color: #1e3932;
+}
+
+.container-style{
+    
+    background-color: aliceblue;
+}
+
+.nav-tab-list{
+    margin-right: 30px;
+}
+
+.font-style h1 {
+    font-size:34px; font-weight:500; text-transform:uppercase;
+    margin-top: 20%
+  }
+  .font-style h1:before {
+      background-color: #c50000;
+      border-radius: 0.25rem;
+      content: '';
+      display: block;
+      height: 0.25rem;
+      width: 42px;
+      margin-bottom: 1.25rem;
+  }
+  
+
+  .coffee-text{
+    text-decoration: #6F4E37 wavy underline;
+  
+  }
+ 
+  .tab-content-padding{
+    padding: 0 100px 0 100px;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: red
+}
+
+.starbucks-heading{
+    font-weight: 700;
+    color: #60ac99;
+    color: red;
+    animation-name: animation-text;
+    animation-duration: 3s;
+    animation-iteration-count: 50;
+}
+.text-grey{
+    color: #aeaaaa;
+}
+
+@keyframes animation-text {
+    from {color: rgb(190, 215, 108);}
+    to {color: #316859;}
+  }
+
+  .nav-pills .pill-style .nav-link:not(.active) {
+    color: #316859;
+}
+.nav-pills .pill-style .nav-link.active  {
+    background-color: #316859;
+    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navar-style{
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    position: sticky;
+}
+
+.nav-pills .pill-style .nav-link:not(.active):hover {
+    color: #a0d289;
+    font-weight: 400;
+}
+.text-shadow{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.image-shadow{
+    filter: drop-shadow(0 0 0.75rem rgb(21, 20, 20));
+     
+}
+.bg-grey{
+    background-color:rgb(204, 212, 219);
+    ;
+}
+.grey-box{
+    position: relative;
+    max-width: 45px;
+    max-height: 45px;
+    background-color: black;
+    margin-right: 10px;
+    display: inline-block;
+}
+.font-lato{
+    color: #433124;
+    font-size: 32px;
+    font-family: 'Creepster', cursive;
+}
+.slogan-row{
+    background-image: url(./data/slogan-background.png);
+}
+
+.service-coffee{
+    color: #6F4E37;
+}
+.service-company{
+    color: #1e3932;
+}
+.service-recycle{
+    color: rgb(87, 200, 87);
+}
+
+.about-startbucks{
+    background-image: url(./data/coffee-beans.png);
+}
+.bestseller-order{
+    border-radius: 50%;
+    border: 1px solid #edebe9;
+    max-width: 120px;
+}
+.bestseller-order:hover{
+    border: 5px solid #3c8d77;
+}
+.order-template{
+    transform: translateY(-100px);
+    max-width: 150px;
+    
+}
+.text-translate{
+    transform: translateY(-90px);
+}
+.order-card{
+    
+}
+.star-green{
+    color: #1e3932;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.image-container {
+    
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left {
+    font-size: 30px;
+    position: absolute;
+    bottom: 100px;
+    left: 12%;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 80%;
+  }
+  .news-image-1{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    filter: brightness(50%);
+  }
+  .news-image-2{
+    margin-bottom: 30px;
+    width: 700px;
+    filter: brightness(50%);
+  }
+  .news-image-3{
+    width: 700px;
+    filter: brightness(50%);
+    margin-bottom: 30px;
+  }
